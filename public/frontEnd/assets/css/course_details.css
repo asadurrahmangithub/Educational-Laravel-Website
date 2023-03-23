@@ -1,0 +1,283 @@
+html,
+body {
+    background: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+::selection {
+    background: #ff511a;
+    color: #fff;
+}
+
+::-moz-selection {
+    background: #ff511a;
+    color: #fff;
+}
+
+@media (max-width: 991px) {
+    html, body {
+        overflow-x: hidden;
+    }
+    .mobile-top-fix {
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+    .mobile-bottom-fix {
+        margin-bottom: 30px;
+    }
+    .mobile-bottom-fix-big {
+        margin-bottom: 60px;
+    }
+}
+
+.green-button a {
+    font-size: 14px;
+    color: #fff;
+    background-color: #43ba7f;
+    padding: 12px 30px;
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    transition: all .3s;
+}
+
+.green-button a:hover {
+    opacity: 0.9;
+}
+
+.orange-button a {
+    font-size: 14px;
+    color: #fff;
+    background-color: #ff511a;
+    padding: 12px 30px;
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    transition: all .3s;
+}
+
+.orange-button a:hover {
+    opacity: 0.9;
+}
+
+section {
+    margin-top: 120px;
+}
+
+.section-heading {
+    position: relative;
+    z-index: 2;
+    margin-top: 0px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.section-heading h6 {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #ff511a;
+    font-weight: 700;
+}
+
+.section-heading h4 {
+    margin-top: 10px;
+    line-height: 40px;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #212741;
+}
+
+.section-heading p {
+    margin-top: 30px;
+}
+
+
+/*
+---------------------------------------------
+about us
+---------------------------------------------
+*/
+
+
+section.about-us {
+    margin-top: 10px;
+}
+
+section.about-us .section-heading {
+    padding-top: 30px;
+}
+
+section.about-us .naccs {
+    position: relative;
+}
+
+section.about-us .naccs .menu div {
+    padding: 15px 30px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px !important;
+    margin-right: 30px;
+    font-size: 18px;
+    color: #212741;
+    background-color: #fff;
+    cursor: pointer;
+    vertical-align: middle;
+    font-weight: 600;
+    transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+section.about-us .naccs .menu div.active {
+    color: #ff511a;
+}
+
+section.about-us ul.nacc {
+    margin-top: 50px !important;
+    position: relative;
+    min-height: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+section.about-us ul.nacc li {
+    background-color: #fff;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateX(50px);
+    position: absolute;
+    list-style: none;
+    transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+section.about-us ul.nacc li .main-list,
+section.about-us ul.nacc li .list-item {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+}
+
+section.about-us ul.nacc li .last-item {
+    margin-bottom: 0px;
+}
+
+section.about-us ul.nacc li span.title {
+    font-size: 15px;
+    color: #212741;
+    font-weight: 600;
+    display: inline-block;
+    width: 13%;
+}
+section.about-us ul.nacc li span.title-admission {
+    font-size: 15px;
+    color: #212741;
+    font-weight: 600;
+    display: inline-block;
+    width: 20%;
+}
+section.about-us ul.nacc li span.scholarship {
+    font-size: 20px;
+    color: #212741;
+    font-weight: 600;
+    display: inline-block;
+    width: 48%;
+}
+
+section.about-us ul.nacc li span.item-title {
+    color: #43ba7f !important;
+    font-weight: 600 !important;
+}
+
+section.about-us ul.nacc li span.item {
+    font-size: 15px;
+    color: #212741;
+    font-weight: 400;
+    display: inline-block;
+    width: 13%;
+}
+
+section.about-us ul.nacc li.active {
+    position: relative;
+    transition-delay: 0.3s;
+    z-index: 2;
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+section.about-us .right-content {
+    margin-left: 60px;
+}
+
+section.about-us .right-content h4 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 40px;
+}
+
+section.about-us .right-content p {
+    margin-bottom: 50px;
+}
+
+
+@media (max-width: 992px) {
+    section.about-us .naccs .menu div,
+    section.service-details .naccs .menu div {
+        margin-right: 15px;
+        font-size: 15px;
+        padding: 15px 20px;
+    }
+    section.about-us .right-content {
+        margin-left: 0px;
+        margin-top: 60px;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    section.about-us ul.nacc li span.item-title {
+        font-size: 25px !important;
+    }
+    section.about-us ul.nacc li span.item {
+        font-size: 25px;
+    }
+    section.about-us ul.nacc li span.title {
+        font-size: 25px;
+        color: #212741;
+        margin-top: 5px;
+        font-weight: 600;
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+    }
+    section.about-us ul.nacc li span.item {
+        font-size: 25px;
+        color: #212741;
+        text-align: center;
+        font-weight: 400;
+        display: inline-block;
+        width: 100%;
+    }
+    section.about-us ul.nacc li span.title-admission {
+        font-size: 25px;
+        color: #212741;
+        margin-top: 5px;
+        font-weight: 600;
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+    }
+    section.about-us ul.nacc li span.scholarship {
+        font-size: 25px;
+        color: #212741;
+        font-weight: 600;
+        display: inline-block;
+        width: 100%;
+    }
+}
